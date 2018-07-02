@@ -1,0 +1,31 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=all/all;
+Actions=meldCompareEachOther;meldSaveForCompare;meldCompareTo;
+X-KDE-Priority=TopLevel
+X-KDE-StartupNotify=false
+X-KDE-Submenu=Compare
+X-KDE-Submenu[it]=Confronta
+X-KDE-Submenu[de]=Vergleichen
+
+[Desktop Action meldCompareEachOther]
+Icon=document-preview
+Name=Compare each other (Meld)
+Name[it]=Confronta l'uno con l'altro (Meld)
+Name[de]=Miteinander vergleichen (Meld)
+Exec=meld %U; rm /tmp/meld_file.tmp;
+
+[Desktop Action meldSaveForCompare]
+Icon=bookmark-new
+Name=Select for compare (Meld)
+Name[it]=Salva per il confronto (Meld)
+Name[de]=Zum Vergleich auswählen (Meld)
+Exec=echo "%U" > /tmp/meld_file.tmp
+
+[Desktop Action meldCompareTo]
+Icon=dialog-ok-apply
+Name=Compare (Meld)
+Name[it]=Confronta (Meld)
+Name[de]=Vergleichen (Meld)
+Exec=meld "`cat /tmp/meld_file.tmp`" "%U"; rm /tmp/meld_file.tmp;
