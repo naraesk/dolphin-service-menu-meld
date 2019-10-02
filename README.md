@@ -8,3 +8,6 @@ Translations for Dutch, German, and Italian are available.
 * Compare each other: select 2 or 3 files or directories to compare
 * Select for compare: Save one or more file/directory paths for compare
 * Compare: Compare selected element with previously saved paths
+
+## Manual installation
+* Copy the file `meld_servicemenu.desktop` to `~/.local/share/kservices5/ServiceMenus`
