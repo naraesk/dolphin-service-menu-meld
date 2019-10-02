@@ -9,6 +9,7 @@ X-KDE-Submenu=Compare
 X-KDE-Submenu[it]=Confronta
 X-KDE-Submenu[de]=Vergleichen
 X-KDE-submenu[nl]=Vergelijken
+X-KDE-submenu[pt]=Comparar
 
 [Desktop Action meldCompareEachOther]
 Icon=document-preview
@@ -16,6 +17,7 @@ Name=Compare each other (Meld)
 Name[it]=Confronta l'uno con l'altro (Meld)
 Name[de]=Miteinander vergleichen (Meld)
 Name[nl]=Beide vergelijken (Meld)
+Name[pt]=Comparar um com outro (Meld)
 Exec=meld %U; rm /tmp/meld_file.tmp;
 
 [Desktop Action meldSaveForCompare]
@@ -23,7 +25,8 @@ Icon=bookmark-new
 Name=Select for compare (Meld)
 Name[it]=Salva per il confronto (Meld)
 Name[de]=Zum Vergleich auswählen (Meld)
-Name[nl]=Selecteer om te vergelijken
+Name[nl]=Selecteer om te vergelijken (Meld)
+Name[pt]=Selecionar para comparar (Meld)
 Exec=echo "%U" > /tmp/meld_file.tmp
 
 [Desktop Action meldCompareTo]
@@ -32,4 +35,5 @@ Name=Compare (Meld)
 Name[it]=Confronta (Meld)
 Name[de]=Vergleichen (Meld)
 Name[nl]=Vergelijken (Meld)
+Name[pt]=Comparar (Meld)
 Exec=meld "`cat /tmp/meld_file.tmp`" "%U"; rm /tmp/meld_file.tmp;
